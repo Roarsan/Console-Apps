@@ -10,13 +10,12 @@ namespace ConsoleAppProject.App01
         private const double MILES_AND_METRES = 1609.34;
         private const double METRES_AND_FEET = 3.28084;
 
-        private DistanceUnits fromUnit;
-        private DistanceUnits toUnit;
+        public DistanceUnits fromUnit;
+        public DistanceUnits toUnit;
 
 
-
-        private double fromDistance;
-        private double toDistance;
+        public double fromDistance;
+        public double toDistance;
 
         private const int MAX_UNITS = 3;
 
@@ -24,7 +23,7 @@ namespace ConsoleAppProject.App01
 
 
 
-        private void InitialiseUnitArray()
+        public void InitialiseUnitArray()
         {
             units[0] = DistanceUnits.Feet.ToString();
             units[1] = DistanceUnits.Miles.ToString();
@@ -50,7 +49,7 @@ namespace ConsoleAppProject.App01
 
         }
 
-        private void Heading1()
+        public void Heading1()
         {
             Console.ForegroundColor = ConsoleColor.Black;
 
@@ -62,7 +61,7 @@ namespace ConsoleAppProject.App01
             Console.WriteLine();
         }
 
-        private DistanceUnits Input(string unit)
+        public DistanceUnits Input(string unit)
         {
             Console.WriteLine($" Please Choose One Of the Following Units to convert {unit}");
             int option = ConsoleHelper.SelectChoice(units);
@@ -81,7 +80,7 @@ namespace ConsoleAppProject.App01
         /// Prompt the user to enter desired distance.
         /// Inputs the number in double.
         /// </summary>
-        private void InputFromDistance()
+        public void InputFromDistance()
         {
             Console.WriteLine("Please enter the number of " + fromUnit);
 
@@ -93,7 +92,7 @@ namespace ConsoleAppProject.App01
         /// <summary>
         /// Gives the output of calculate method .
         /// </summary>
-        private void Output()
+        public void Output()
         {
             Console.WriteLine(fromDistance + " " + fromUnit.ToString() + " is " + toDistance + " " + toUnit);
 
@@ -102,7 +101,7 @@ namespace ConsoleAppProject.App01
         /// <summary>
         /// calculates distance by multipying or dividing  using from unit and to unit
         /// </summary>
-        private void Calculate()
+        public void Calculate()
         {
             if (fromUnit == DistanceUnits.Miles && toUnit == DistanceUnits.Feet)
             {
