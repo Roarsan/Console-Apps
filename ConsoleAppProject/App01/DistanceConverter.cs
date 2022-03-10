@@ -35,7 +35,7 @@ namespace ConsoleAppProject.App01
 
         public void Run()
         {
-            Heading();
+            Heading1();
             InitialiseUnitArray();
             fromUnit = Input("FROM");
             toUnit = Input("TO");
@@ -50,7 +50,7 @@ namespace ConsoleAppProject.App01
 
         }
 
-        private void Heading()
+        private void Heading1()
         {
             Console.ForegroundColor = ConsoleColor.Black;
 
