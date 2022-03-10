@@ -1,6 +1,5 @@
 ﻿using ConsoleAppProject.App01;
-using ConsoleAppProject.App03;
-using ConsoleAppProject.Helpers;
+using ConsoleAppProject.App02;
 using System;
 
 namespace ConsoleAppProject
@@ -22,12 +21,17 @@ namespace ConsoleAppProject
             Console.WriteLine();
             Console.WriteLine(" =================================================");
             Console.WriteLine("    BNU CO453 Applications Programming 2021-2022! ");
-            Console.WriteLine("        by Roshan Gauchan                                  ");
+            Console.WriteLine("                 by Roshan Gauchan                                  ");
             Console.WriteLine(" =================================================");
             Console.WriteLine();
 
             DistanceConverter converter = new DistanceConverter();
             converter.Run();
+
+            BMI calculator = new BMI();
+            calculator.Run();
         }
+     
+     
     }
 }

@@ -35,7 +35,7 @@ namespace ConsoleAppProject.App01
 
         public void Run()
         {
-
+            Heading();
             InitialiseUnitArray();
             fromUnit = Input("FROM");
             toUnit = Input("TO");
@@ -50,9 +50,21 @@ namespace ConsoleAppProject.App01
 
         }
 
+        private void Heading()
+        {
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine();
+            Console.WriteLine(" =================================================");
+            Console.WriteLine("    BNU CO453 Distance Converter ");
+            Console.WriteLine("          Roshan Gauchan                                  ");
+            Console.WriteLine(" =================================================");
+            Console.WriteLine();
+        }
+
         private DistanceUnits Input(string unit)
         {
-            Console.WriteLine(" Please Choose One Of the Following Units To convert" + units);
+            Console.WriteLine($" Please Choose One Of the Following Units to convert {unit}");
             int option = ConsoleHelper.SelectChoice(units);
 
             if (option == 1)
