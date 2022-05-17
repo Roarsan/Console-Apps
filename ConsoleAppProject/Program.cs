@@ -25,11 +25,19 @@ namespace ConsoleAppProject
             Console.WriteLine(" =================================================");
             Console.WriteLine();
 
-            DistanceConverter converter = new DistanceConverter();
-            converter.Run();
+            Console.WriteLine("Which app would you like to choose?");
+            string input = Console.ReadLine();
 
-            BMI calculator = new BMI();
-            calculator.Run();
+            if(input == "1")
+            {
+                DistanceConverter converter = new DistanceConverter();
+                converter.Run();
+            }
+            if(input == "2")
+            {
+                BMI calculator = new BMI();
+                calculator.CalculaterIndex();
+            }
         }
      
      
