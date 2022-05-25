@@ -1,5 +1,6 @@
 ﻿using ConsoleAppProject.App01;
 using ConsoleAppProject.App02;
+using ConsoleAppProject.App03;
 using System;
 
 namespace ConsoleAppProject
@@ -37,6 +38,11 @@ namespace ConsoleAppProject
             {
                 BMI calculator = new BMI();
                 calculator.CalculaterIndex();
+            }
+            if (input == "3")
+            {
+                StudentGrades grades = new StudentGrades();
+                grades.StudentGradesMenu();
             }
         }
      
