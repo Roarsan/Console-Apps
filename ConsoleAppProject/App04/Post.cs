@@ -7,8 +7,8 @@ namespace ConsoleAppProject.App04
     /// has as sub child Massagepost and PhotoPost
     /// </summary>
     /// <author>
-    /// Sudath Nawagamuwage 
-    /// Date : 27/03/2022
+    /// Roshan Gauchan
+    /// Date : 07/06/2022
     /// </author>
     public class Post
     {
@@ -82,9 +82,9 @@ namespace ConsoleAppProject.App04
             Console.WriteLine($"\tTime Elpased:\t {FormatElapsedTime(Timestamp)}");
             Console.WriteLine($"\tDate Posted:\t {Timestamp.ToLongDateString()}");
             Console.WriteLine($"\tTime Posted:\t {Timestamp.ToLongTimeString()}");
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("===================================================");
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Black;
 
             Console.WriteLine();
 
@@ -108,9 +108,9 @@ namespace ConsoleAppProject.App04
             if (comments.Count == 0)
             {
                 Console.WriteLine("    No comments.");
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("===================================================");
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Black;
             }
             else
             {
@@ -118,9 +118,9 @@ namespace ConsoleAppProject.App04
                 foreach (string comments in comments)
                 {
                     Console.WriteLine($"\tComment: {comments}\n");
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("===================================================");
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
                 }
 

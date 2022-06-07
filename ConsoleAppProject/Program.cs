@@ -1,6 +1,7 @@
 ﻿using ConsoleAppProject.App01;
 using ConsoleAppProject.App02;
 using ConsoleAppProject.App03;
+using ConsoleAppProject.App04;
 using System;
 
 namespace ConsoleAppProject
@@ -43,6 +44,11 @@ namespace ConsoleAppProject
             {
                 StudentGrades grades = new StudentGrades();
                 grades.StudentGradesMenu();
+            }
+            if (input == "4")
+            {
+                NewsApp socialApp = new NewsApp();
+                socialApp.DisplayMenu();
             }
         }
      
