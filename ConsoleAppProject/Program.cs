@@ -23,7 +23,7 @@ namespace ConsoleAppProject
             Console.WriteLine();
             Console.WriteLine(" =================================================");
             Console.WriteLine("    BNU CO453 Applications Programming 2021-2022! ");
-            Console.WriteLine("                 by Roshan Gauchan                                  ");
+            Console.WriteLine("               by Roshan Gauchan                                  ");
             Console.WriteLine(" =================================================");
             Console.WriteLine();
 
